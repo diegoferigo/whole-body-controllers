@@ -3,13 +3,13 @@
 %
 
 %% --- Initialization ---
-Config.ON_GAZEBO         = false;
+Config.ON_GAZEBO         = true;
 ROBOT_DOF                = 23;
 ROBOT_DOF_FOR_SIMULINK   = eye(ROBOT_DOF);
 
 % Robot configuration for WBT3.0
 WBTConfigRobot                    = WBToolbox.Configuration;
-WBTConfigRobot.RobotName          = 'icub';
+WBTConfigRobot.RobotName          = 'icubSim';
 WBTConfigRobot.UrdfFile           = 'model.urdf';
 WBTConfigRobot.LocalName          = 'WBT';
 WBTConfigRobot.ControlBoardsNames = {'torso','left_arm','right_arm','left_leg','right_leg'};
